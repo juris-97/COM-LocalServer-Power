@@ -1,4 +1,5 @@
 #include <windows.h>
+#include <stdio.h>
 #include <string.h>
 #include "IPower.h"
 #include "Factory.h"
@@ -18,6 +19,8 @@ int main(int argc, const char** argv) {
 			factory->AddRef();
 			result = CoRegisterClassObject(CLSID_Power, (IUnknown*)factory,
 				CLSCTX_LOCAL_SERVER, REGCLS_MULTIPLEUSE, &factoryId);
+
+			printf("SERVER STARTED..");
 
 			if (SUCCEEDED(result)) {
 				Sleep(5000);
