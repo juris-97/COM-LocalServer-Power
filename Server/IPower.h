@@ -1,0 +1,20 @@
+#ifndef IPOWER_H
+#define IPOWER_H
+
+#include<windows.h>
+
+// Interface IPower {AD400394-FBE7-450F-AEC9-70417B606DFD}
+DEFINE_GUID(IID_IPower, 0xad400394, 0xfbe7, 0x450f, 0xae, 0xc9, 0x70, 0x41, 0x7b, 0x60, 0x6d, 0xfd);
+
+// Class Power {B6F88457-6C0B-4125-BECD-F201BC66F668}
+DEFINE_GUID(CLSID_Power, 0xb6f88457, 0x6c0b, 0x4125, 0xbe, 0xcd, 0xf2, 0x1, 0xbc, 0x66, 0xf6, 0x68);
+
+// Proxy GUID {C24C84DF-F79D-438D-BB49-6302FA2941DA}
+//DEFINE_GUID( Proxy , 0xc24c84df, 0xf79d, 0x438d, {0xbb, 0x49, 0x63, 0x2, 0xfa, 0x29, 0x41, 0xda});
+
+class IPower : public IUnknown {
+public:
+	virtual HRESULT STDMETHODCALLTYPE power(int *val) = 0;
+};
+
+#endif
