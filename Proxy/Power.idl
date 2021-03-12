@@ -1,0 +1,5 @@
+import "oaidl.idl";
+[object, uuid(AD400394-FBE7-450F-AEC9-70417B606DFD)]
+interface IPower : IUnknown {
+	HRESULT power([in,out]int *val);
+};

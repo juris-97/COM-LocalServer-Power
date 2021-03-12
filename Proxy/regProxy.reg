@@ -1,0 +1,12 @@
+REGEDIT4
+      
+[HKEY_CURRENT_USER\Software\Classes\Wow6432Node\Interface\{AD400394-FBE7-450F-AEC9-70417B606DFD}]
+@="IPower"
+[HKEY_CURRENT_USER\Software\Classes\Wow6432Node\Interface\{AD400394-FBE7-450F-AEC9-70417B606DFD}\ProxyStubClsid32]
+@="{C24C84DF-F79D-438D-BB49-6302FA2941DA}"
+[HKEY_CURRENT_USER\Software\Classes\Wow6432Node\CLSID\{C24C84DF-F79D-438D-BB49-6302FA2941DA}]
+@="PSFactoryBuffer"
+[HKEY_CURRENT_USER\Software\Classes\Wow6432Node\CLSID\{C24C84DF-F79D-438D-BB49-6302FA2941DA}\InprocServer32]
+@="C:\\Users\\Lemon\\Desktop\\KSR\\git\\Power_Local-Server\\PowerCOM\\Debug\\Proxy.dll"
+"ThreadingModel"="Both"
+
